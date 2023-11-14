@@ -5,7 +5,7 @@ var conn = mysql.createConnection(dbInfo);
 var router = express.Router();
 
 router.get('/:id', (req, res) => {
-	var sql = `select * from MANAGER where id = ${req.params.id}'`;
+	var sql = `select * from MANAGER where id = ${req.params.id}`;
     conn.query(sql, (err, rows) => {
     	console.log(rows);
         res.send(rows);
