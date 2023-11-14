@@ -11,3 +11,5 @@ router.get('/:id', (req, res) => {
         res.send(rows);
     });
 });
+
+module.exports = router;
